@@ -1,0 +1,41 @@
+{
+    "name": "rust-leaf-color-theme",
+    "displayName": "rust-leaf-color-theme",
+    "publisher": "chatblanc",
+    "description": "This theme supports Rust tokens.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "leaf",
+                "uiTheme": "hc-black",
+                "path": "./themes/leaf.json"
+            },
+            {
+                "label": "leafly_lake",
+                "uiTheme": "hc-black",
+                "path": "./themes/leafly_lake.json"
+            },
+            {
+                "label": "colorful_light_rust_theme",
+                "uiTheme": "vs",
+                "path": "./themes/colorful_light_rust_theme.json"
+            }
+        ],
+        "grammars": [
+            {
+                "scopeName": "source.rust-let",
+                "path": "./syntaxes/rust-let.json",
+                "injectTo": [
+                    "source.rust"
+                ]
+            }
+        ]
+    }
+}

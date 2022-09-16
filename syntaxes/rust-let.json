@@ -1,0 +1,26 @@
+{
+  "scopeName": "source.rust-let",
+  "injectionSelector": "L:source.rust",
+  "patterns": [
+    {
+      "comment": "let",
+      "patterns": [
+        {
+          "comment": "let",
+          "name": "keyword.other.let.rust",
+          "match": "\\blet\\b"
+        }
+      ]
+    },
+    {
+      "comment": "pub",
+      "patterns": [
+        {
+          "comment": "pub",
+          "name": "keyword.other.pub.rust",
+          "match": "\\bpub\\b"
+        }
+      ]
+    }
+  ]
+}
