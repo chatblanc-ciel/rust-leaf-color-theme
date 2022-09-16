@@ -13,28 +13,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "leaf",
-                "uiTheme": "hc-black",
-                "path": "./themes/leaf.json"
-            },
-            {
                 "label": "leafly_lake",
-                "uiTheme": "hc-black",
-                "path": "./themes/leafly_lake.json"
-            },
-            {
-                "label": "colorful_light_rust_theme",
-                "uiTheme": "vs",
-                "path": "./themes/colorful_light_rust_theme.json"
-            }
-        ],
-        "grammars": [
-            {
-                "scopeName": "source.rust-let",
-                "path": "./syntaxes/rust-let.json",
-                "injectTo": [
-                    "source.rust"
-                ]
+                "uiTheme": "hc-light",
+                "path": "./themes/leafly-lake-theme.json"
             }
         ]
     }
