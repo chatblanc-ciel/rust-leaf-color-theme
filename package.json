@@ -1,11 +1,11 @@
 {
-    "name": "rust-leaf-color-theme",
-    "displayName": "rust-leaf-color-theme",
-    "publisher": "chatblanc",
-    "description": "This theme supports Rust tokens.",
+    "name": "leafy-lake",
+    "displayName": "Leafy Lake",
+    "description": "ColorThema inspired from vision of leafy lake.",
     "version": "0.0.1",
+    "publisher": "chatblanc-ciel",
     "engines": {
-        "vscode": "^1.52.0"
+        "vscode": "^1.67.0"
     },
     "categories": [
         "Themes"
@@ -13,9 +13,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "leafly_lake",
+                "label": "Leafy Lake",
                 "uiTheme": "hc-light",
-                "path": "./themes/leafly-lake-theme.json"
+                "path": "./themes/leafly-lake-thema.json"
             }
         ]
     },
