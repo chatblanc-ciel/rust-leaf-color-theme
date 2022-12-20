@@ -18,5 +18,13 @@
                 "path": "./themes/leafly-lake-theme.json"
             }
         ]
-    }
+    },
+    "bugs": {
+        "url": "https://github.com/chatblanc-ciel/rust-leaf-color-theme/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chatblanc-ciel/rust-leaf-color-theme.git"
+    },
+    "homepage": "https://github.com/chatblanc-ciel/rust-leaf-color-theme"
 }
