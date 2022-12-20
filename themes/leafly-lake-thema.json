@@ -1,6 +1,7 @@
 {
     "$schema": "vscode://schemas/color-theme",
     "type": "hc",
+    "semanticHighlighting": true,
     "colors": {
         "activityBar.activeBackground": "#e0ffc1",
         "activityBar.activeBorder": "#ebeef5",
@@ -547,5 +548,202 @@
         "editorBracketHighlight.foreground6": "#89c3eb",
         "editorBracketHighlight.unexpectedBracket.foreground": "#d3381c"
     },
-    "tokenColors": []
+    "semanticTokenColors": {
+        "enumMember": {
+            "foreground": "#000000"
+        },
+        "variable.constant": {
+            "foreground": "#000000"
+        },
+        "variable.defaultLibrary": {
+            "foreground": "#007b43"
+        }
+    },
+    "tokenColors": [
+        {
+            "name": "[common]Comments",
+            "scope": [
+                "comment, punctuation.definition.comment",
+            ],
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#89c3eb"
+            }
+        },
+        {
+            "name": "[common]meta.brace.square",
+            "scope": [
+                "meta.brace.square"
+            ],
+            "settings": {
+                "foreground": "#000000"
+            }
+        },
+        {
+            "name": "[common]numeric",
+            "scope": [
+                "constant.numeric",
+            ],
+            "settings": {
+                "foreground": "#f4b3c2"
+            }
+        },
+        {
+            "name": "[common]Strings, punctuation.definition.string",
+            "scope": [
+                "string",
+                "punctuation.definition.string",
+                "punctuation.definition.string.end"
+            ],
+            "settings": {
+                "foreground": "#f8b500"
+            }
+        },
+        {
+            "name": "[common]Escape Characters, String interpolation",
+            "scope": [
+                "constant.character.escape",
+                "punctuation.definition.interpolation",
+                "meta.interpolation",
+            ],
+            "settings": {
+                "foreground": "#a15dc4"
+            }
+        },
+        {
+            "name": "[common]Storage",
+            "scope": "storage",
+            "settings": {
+                "foreground": "#d3381c"
+            }
+        },
+        {
+            "name": "[common]Keywords",
+            "scope": "keyword",
+            "settings": {
+                "foreground": "#d3381c"
+            }
+        },
+        {
+            "name": "[common]Keyword Control",
+            "scope": "keyword.control",
+            "settings": {
+                "foreground": "#a15dc4"
+            }
+        },
+        {
+            "name": "[Rust] Keyword operator reset redundant colors",
+            "scope": [
+                "keyword.operator",
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#000000"
+            }
+        },
+        {
+            "name": "[common]Type Name",
+            "scope": "entity.name.type",
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#007b43"
+            }
+        },
+        {
+            "name": "[common]Functions",
+            "scope": [
+                "entity.name.function",
+                "meta.require",
+                "support.function.any-method",
+                "variable.function"
+            ],
+            "settings": {
+                "foreground": "#2ca9e1"
+            }
+        },
+        {
+            "name": "[common]Function Definitions",
+            "scope": [
+                "meta.function.definition entity.name.function",
+            ],
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#2ca9e1"
+            }
+        },
+        {
+            "name": "[common]Macros",
+            "scope": [
+                "meta.macro entity.name.function",
+            ],
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#2ca9e1"
+            }
+        },
+        {
+            "name": "[common]Macro Definitions",
+            "scope": [
+                "meta.macro.definition entity.name.function",
+            ],
+            "settings": {
+                "fontStyle": "italic bold",
+                "foreground": "#2ca9e1"
+            }
+        },
+        {
+            "name": "[common]Variables",
+            "scope": "variable",
+            "settings": {
+                "foreground": "#000000"
+            }
+        },
+        {
+            "name": "[common]entity.name.type.module",
+            "scope": "entity.name.type.module",
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#007b43"
+            }
+        },
+        {
+            "name": "[common]Text",
+            "scope": [
+                "variable.parameter.function",
+                "text"
+            ],
+            "settings": {
+                "foreground": "#000000"
+            }
+        },
+        {
+            "name": "[Markup] markup Italic",
+            "scope": [
+                "markup.italic",
+                "punctuation.definition.italic",
+            ],
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#f4b3c2"
+            }
+        },
+        {
+            "name": "[Markup] markup Bold",
+            "scope": [
+                "markup.bold",
+                "punctuation.definition.bold",
+            ],
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#007b43"
+            }
+        },
+        {
+            "name": "[Markup] Markup Quote",
+            "scope": "markup.quote",
+            "settings": {
+                "foreground": "#89c3eb"
+            }
+        },
+    ],
 }
