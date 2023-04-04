@@ -539,6 +539,13 @@
         "window.inactiveBorder": "#007b43",
         "workspaceTrust.trustedForergound": "#ff00ff",
         "workspaceTrust.untrustedForeground": "#ff00ff",
+        "editorBracketHighlight.foreground1": "#007b43",
+        "editorBracketHighlight.foreground2": "#aacf53",
+        "editorBracketHighlight.foreground3": "#f4b3c2",
+        "editorBracketHighlight.foreground4": "#a15dc4",
+        "editorBracketHighlight.foreground5": "#007bbb",
+        "editorBracketHighlight.foreground6": "#89c3eb",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#d3381c"
     },
     "tokenColors": []
 }
