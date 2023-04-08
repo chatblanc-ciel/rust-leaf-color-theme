@@ -941,5 +941,25 @@
                 "foreground": "#ffd900"
             }
         },
+        {
+            "name": "[C/C++] keyword.operator.sizeof.c",
+            "scope": [
+                "keyword.operator.sizeof.c",
+                "keyword.operator.sizeof.cpp"
+            ],
+            "settings": {
+                "foreground": "#d3381c"
+            }
+        },
+        {
+            "name": "[C/C++] keyword explicit Type annotation(suffix)",
+            "scope": [
+                "keyword.other.unit.user-defined.c",
+                "keyword.other.unit.user-defined.cpp"
+            ],
+            "settings": {
+                "foreground": "#f4b3c2"
+            }
+        },
     ],
 }
