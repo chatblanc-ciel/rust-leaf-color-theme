@@ -559,11 +559,20 @@
         {
             "name": "[common]Comments",
             "scope": [
-                "comment, punctuation.definition.comment",
+                "comment",
+                "punctuation.definition.comment",
             ],
             "settings": {
                 "fontStyle": "italic",
                 "foreground": "#89c3eb"
+            }
+        },
+        {
+            "name": "[common]comment.line.double-slash",
+            "scope": "comment.line.double-slash",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#a3a3a2"
             }
         },
         {
@@ -681,6 +690,7 @@
             "name": "[common]Macro Definitions",
             "scope": [
                 "meta.macro.definition entity.name.function",
+                "meta.macro.rules entity.name.function",
             ],
             "settings": {
                 "fontStyle": "italic bold",
