@@ -1,0 +1,17 @@
+name: create git-tag when passing `milestone`
+on:
+  milestone:
+    types: [closed]
+
+env:
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+   create-git-tag:
+     runs-on: ubuntu-latest
+     steps:
+       - uses: actions/checkout@v2
+       - run: |
+          echo ${{ github.event.milestone.title }} > TAG_NAME
+          git tag $(cat TAG_NAME)
+          git push origin $(cat TAG_NAME)

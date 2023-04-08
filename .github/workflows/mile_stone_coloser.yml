@@ -1,0 +1,16 @@
+name: "Close finished milestones"
+on:
+  pull_request:
+    types: [closed]
+
+env:
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  milestone-closer:
+    if: github.event.pull_request.milestone.open_issues == 0
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close a milestone
+        run: |
+          set -x
+          gh api -X PATCH repos/${GITHUB_REPOSITORY}/milestones/${{ github.event.pull_request.milestone.number }} -f state=closed
