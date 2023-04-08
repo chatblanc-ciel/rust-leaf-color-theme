@@ -743,6 +743,87 @@
             "scope": "markup.quote",
             "settings": {
                 "foreground": "#89c3eb"
+            },
+        },
+        {
+            "name": "[Markdown][VSCODE-CUSTOM] Markdown headings",
+            "scope": "entity.name.section.markdown",
+            "settings": {
+                "foreground": "#000000"
+            }
+        },
+        {
+            "name": "[Markdown] Markdown Punctuation Definition(heading, list)",
+            "scope": [
+                "punctuation.definition.heading.markdown",
+                "punctuation.definition.list.markdown",
+                "punctuation.definition.list.begin.markdown"
+            ],
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#a15dc4"
+            }
+        },
+        {
+            "name": "[Markdown] Markdown Inline Raw",
+            "scope": [
+                "markup.inline.raw.markdown",
+                "markup.inline.raw.string.markdown"
+            ],
+            "settings": {
+                "foreground": "#f8b500"
+            }
+        },
+        {
+            "name": "[Markdown][VSCODE-CUSTOM] Markdown Underline Link",
+            "scope": "markup.underline.link.markdown",
+            "settings": {
+                "foreground": "#007bbb"
+            }
+        },
+        {
+            "name": "[Markdown][VSCODE-CUSTOM] Markdown Underline Link/Image",
+            "scope": "markup.underline.link.image.markdown",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#007bbb"
+            }
+        },
+        {
+            "name": "[Markdown][VSCODE-CUSTOM] Markdown Link Title",
+            "scope": "string.other.link.title.markdown",
+            "settings": {
+                "foreground": "#aacf53"
+            }
+        },
+        {
+            "name": "[Markdown][VSCODE-CUSTOM] Markdown Link Description",
+            "scope": "string.other.link.description.markdown",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#aacf53"
+            }
+        },
+        {
+            "name": "[Markdown][VSCODE-CUSTOM] Markdown Link Description",
+            "scope": [
+                "punctuation.definition.link.description.begin.markdown",
+                "punctuation.definition.link.description.end.markdown",
+                "punctuation.definition.metadata.markdown"
+            ],
+            "settings": {
+                "foreground": "#000000"
+            }
+        },
+        {
+            "name": "[Markdown] Codeblock fenced_code.block.markdown",
+            "scope": [
+                "markup.fenced_code.block.markdown punctuation.definition.markdown",
+                "markup.fenced_code.block.markdown fenced_code.block.language.markdown",
+            ],
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#a15dc4"
             }
         },
     ],
