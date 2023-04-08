@@ -832,5 +832,114 @@
                 "foreground": "#a15dc4"
             }
         },
+        {
+            "name": "[Rust] reset redundant colors",
+            "scope": [],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#000000"
+            }
+        },
+        {
+            "name": "[Rust] meta.attribute.rust",
+            "scope": [
+                "meta.attribute.rust",
+            ],
+            "settings": {
+                "foreground": "#a15dc4"
+            }
+        },
+        {
+            "name": "[Rust] meta.attribute, punctuation.definition.attribute",
+            "scope": [
+                "meta.attribute.rust punctuation.comma.rust",
+                "meta.attribute.rust punctuation.brackets.attribute.rust",
+                "meta.attribute.rust punctuation.brackets.round.rust",
+                "punctuation.definition.attribute.rust",
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#000000"
+            }
+        },
+        {
+            "name": "[Rust] constant.numeric explicit Type annotation, range operator",
+            "scope": [
+                "constant.numeric entity.name.type.numeric.rust",
+                "keyword.operator.range.rust",
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#f4b3c2"
+            }
+        },
+        {
+            "name": "[Rust] support.function.std.rust",
+            "scope": "support.function.std.rust",
+            "settings": {
+                "foreground": "#2ca9e1"
+            }
+        },
+        {
+            "name": "[Rust] entity.name.lifetime.rust",
+            "scope": [
+                "entity.name.lifetime.rust",
+                "entity.name.type.lifetime.rust",
+                "punctuation.definition.lifetime.rust"
+            ],
+            "settings": {
+                "fontStyle": "italic bold",
+                "foreground": "#ffd900"
+            }
+        },
+        {
+            "name": "[Rust] variable.language.super.rust",
+            "scope": "variable.language.super.rust",
+            "settings": {
+                "foreground": "#a15dc4"
+            }
+        },
+        {
+            "name": "[Rust] keyword.operator(sigil, dereference)",
+            "scope": [
+                "keyword.operator.sigil.rust",
+                "keyword.operator.dereference.rust"
+            ],
+            "settings": {
+                "foreground": "#d3381c"
+            }
+        },
+        {
+            "name": "[Rust] keyword.other(crate, borrow.and)",
+            "scope": [
+                "keyword.other.crate.rust",
+                "keyword.operator.borrow.and.rust",
+            ],
+            "settings": {
+                "foreground": "#a15dc4"
+            }
+        },
+        {
+            "name": "[Rust] self, primitive type",
+            "scope": [
+                "variable.language.self.rust",
+                "entity.name.type.primitive.rust",
+                "entity.name.type.numeric.rust",
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#007b43"
+            }
+        },
+        {
+            "name": "[Rust] storage.modifier.mut, keyword.other.question",
+            "scope": [
+                "storage.modifier.mut.rust",
+                "keyword.operator.question.rust",
+            ],
+            "settings": {
+                "foreground": "#ffd900"
+            }
+        },
     ],
 }
