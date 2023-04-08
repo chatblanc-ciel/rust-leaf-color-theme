@@ -1,8 +1,7 @@
 on:
   push:
-    branches:
-      - "patch-release"
-
+    tags:
+      - "*"
 
 name: Deploy Extension
 jobs:
@@ -13,9 +12,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - run: npm install -g @vscode/vsce
       - run: npm install
-      - run: "vsce publish patch --yarn"
-      - env:
-          VSCE_PAT: ${{ secrets.VS_MARKETPLACE_TOKEN }}
-
+      - name: Publish to Visual Studio Marketplace
+        uses: HaaLeo/publish-vscode-extension@v1
+        with:
+          pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+          registryUrl: https://marketplace.visualstudio.com
