@@ -5,6 +5,7 @@ on:
 
 env:
   GH_TOKEN: ${{ github.token }}
+  
 jobs:
   milestone-closer:
     if: github.event.pull_request.milestone.open_issues == 0
