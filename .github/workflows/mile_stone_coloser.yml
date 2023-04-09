@@ -1,4 +1,4 @@
-name: "Close finished milestones"
+name: "release with milestone manegement"
 on:
   pull_request:
     types: [closed]
@@ -28,3 +28,18 @@ jobs:
           echo ${{ github.event.pull_request.milestone.title }} > TAG_NAME
           git tag $(cat TAG_NAME)
           git push origin $(cat TAG_NAME)
+  deploy:
+    needs: create-git-tag
+    if: github.event.pull_request.milestone.open_issues == 0
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - run: npm install
+      - name: Publish to Visual Studio Marketplace
+        uses: HaaLeo/publish-vscode-extension@v1
+        with:
+          pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+          registryUrl: https://marketplace.visualstudio.com
