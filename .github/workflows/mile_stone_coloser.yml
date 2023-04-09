@@ -3,9 +3,11 @@ on:
   pull_request:
     types: [closed]
 
+
 env:
   GH_TOKEN: ${{ github.token }}
   
+
 jobs:
   milestone-closer:
     if: github.event.pull_request.milestone.open_issues == 0
@@ -15,6 +17,7 @@ jobs:
         run: |
           set -x
           gh api -X PATCH repos/${GITHUB_REPOSITORY}/milestones/${{ github.event.pull_request.milestone.number }} -f state=closed
+  
   create-git-tag:
     needs: milestone-closer
     if: github.event.pull_request.milestone.open_issues == 0
