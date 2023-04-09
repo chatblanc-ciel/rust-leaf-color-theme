@@ -15,3 +15,13 @@ jobs:
         run: |
           set -x
           gh api -X PATCH repos/${GITHUB_REPOSITORY}/milestones/${{ github.event.pull_request.milestone.number }} -f state=closed
+  create-git-tag:
+    needs: milestone-closer
+    if: github.event.pull_request.milestone.open_issues == 0
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          echo ${{ github.event.pull_request.milestone.title }} > TAG_NAME
+          git tag $(cat TAG_NAME)
+          git push origin $(cat TAG_NAME)
