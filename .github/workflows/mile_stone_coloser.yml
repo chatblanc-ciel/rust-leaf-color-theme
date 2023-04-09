@@ -7,9 +7,14 @@ on:
 
 env:
   GH_TOKEN: ${{ github.token }}
-  
+
 jobs:
   milestone-closer:
+    if: github.event.milestone.open_issues == 0
     runs-on: ubuntu-latest
     steps:
-    - uses: instantish/milestone-closer@v1
+      - name: Close a milestone
+        run: |
+          set -x
+          milestone_number=$(gh api -X GET /repos/${GITHUB_REPOSITORY}/milestones --jq ". | map(select(.title == \"${BRANCH#milestone/}\")) | first | .number")
+          gh api -X PATCH repos/${GITHUB_REPOSITORY}/milestones/${milestone_number} -f state=closed
