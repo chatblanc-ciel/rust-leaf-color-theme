@@ -1,5 +1,8 @@
 name: create git-tag when passing `milestone`
 on:
+  workflow_run:
+    workflows: ["Close finished milestones"]
+    types: [completed]
   milestone:
     types: [closed]
 
