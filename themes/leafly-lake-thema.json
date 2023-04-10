@@ -954,7 +954,10 @@
             "name": "[C/C++] keyword.operator.sizeof.c",
             "scope": [
                 "keyword.operator.sizeof.c",
-                "keyword.operator.sizeof.cpp"
+                "keyword.operator.sizeof.cpp",
+                "keyword.operator.new.cpp",
+                "keyword.operator.delete.cpp",
+                "keyword.operator.delete.array.cpp"
             ],
             "settings": {
                 "foreground": "#d3381c"
