@@ -961,5 +961,92 @@
                 "foreground": "#f4b3c2"
             }
         },
+        {
+            "name": "[js/ts/jsx] parameter",
+            "scope": [
+                "variable.parameter.js",
+                "variable.parameter.ts",
+                "variable.parameter.jsx",
+            ],
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#aacf53"
+            }
+        },
+        {
+            "name": "[js/ts/jsx] entity.name.function",
+            "scope": [
+                "entity.name.function.js",
+                "entity.name.function.ts",
+                "entity.name.function.jsx",
+            ],
+            "settings": {
+                "foreground": "#2ca9e1"
+            }
+        },
+        {
+            "name": "[js/ts/jsx] variable.other.object",
+            "scope": [
+                "variable.other.object.js",
+                "variable.other.object.ts",
+                "variable.other.object.jsx",
+            ],
+            "settings": {
+                "foreground": "#007b43"
+            }
+        },
+        {
+            "name": "[js/ts/jsx] variable.other.property",
+            "scope": [
+                "variable.other.property.js",
+                "variable.other.property.ts",
+                "variable.other.property.jsx",
+            ],
+            "settings": {
+                "foreground": "#aacf53"
+            }
+        },
+        {
+            "name": "[js/ts/jsx] variable.language.super",
+            "scope": [
+                "variable.language.super.js",
+                "variable.language.super.ts",
+                "variable.language.super.jsx",
+            ],
+            "settings": {
+                "foreground": "#a15dc4"
+            }
+        },
+        {
+            "name": "[js/ts/jsx] variable.language.this",
+            "scope": [
+                "variable.language.this.js",
+                "variable.language.this.ts",
+                "variable.language.this.jsx",
+            ],
+            "settings": {
+                "foreground": "#d3381c"
+            }
+        },
+        {
+            "name": "[js/ts/jsx] Keywords",
+            "scope": [
+                "constant.language.undefined.js",
+                "constant.language.undefined.ts",
+                "constant.language.undefined.jsx",
+                "keyword.operator.expression.typeof.js",
+                "keyword.operator.expression.typeof.ts",
+                "keyword.operator.expression.typeof.jsx",
+                "constant.language.boolean.true.js",
+                "constant.language.boolean.true.ts",
+                "constant.language.boolean.true.jsx",
+                "constant.language.boolean.false.js",
+                "constant.language.boolean.false.ts",
+                "constant.language.boolean.false.jsx",
+            ],
+            "settings": {
+                "foreground": "#d3381c"
+            }
+        },
     ],
 }
