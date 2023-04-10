@@ -657,7 +657,7 @@
         {
             "name": "[common]Functions",
             "scope": [
-                "entity.name.function",
+                "entity.name.function.call",
                 "meta.require",
                 "support.function.any-method",
                 "variable.function"
@@ -720,6 +720,15 @@
             ],
             "settings": {
                 "foreground": "#000000"
+            }
+        },
+        {
+            "name": "[common] variable.language.this",
+            "scope": [
+                "variable.language.this",
+            ],
+            "settings": {
+                "foreground": "#d3381c"
             }
         },
         {
