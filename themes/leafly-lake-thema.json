@@ -732,6 +732,23 @@
             }
         },
         {
+            "name": "[common] regexp constant character-class",
+            "scope": "constant.other.character-class.regexp",
+            "settings": {
+                "foreground": "#d3381c"
+            }
+        },
+        {
+            "name": "[common] regexp operator.quantifier",
+            "scope": "keyword.operator.quantifier.regexp",
+            "settings": {}
+        },
+        {
+            "name": "[common] Regular Expressions",
+            "scope": "string.regexp",
+            "settings": {}
+        },
+        {
             "name": "[Markup] markup Italic",
             "scope": [
                 "markup.italic",
