@@ -1077,5 +1077,24 @@
                 "foreground": "#d3381c"
             }
         },
+        {
+            "name": "[HTML] Tag name",
+            "scope": [
+                "entity.name.tag.html",
+            ],
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#d3381c"
+            }
+        },
+        {
+            "name": "[HTML] Tag name",
+            "scope": [
+                "entity.other.attribute-name.html",
+            ],
+            "settings": {
+                "foreground": "#007b43"
+            }
+        },
     ],
 }
