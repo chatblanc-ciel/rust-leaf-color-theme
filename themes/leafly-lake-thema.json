@@ -732,21 +732,47 @@
             }
         },
         {
-            "name": "[common] regexp constant character-class",
-            "scope": "constant.other.character-class.regexp",
+            "name": "[common] Regular Expressions",
+            "scope": "string.regexp",
             "settings": {
+                "foreground": "#aacf53"
+            }
+        },
+        {
+            "name": "[common] regexp (character-class, group.no-capture)",
+            "scope": [
+                "constant.other.character-class.regexp",
+                "punctuation.definition.group.no-capture.regexp",
+            ],
+            "settings": {
+                "fontStyle": "bold",
                 "foreground": "#d3381c"
+            }
+        },
+        {
+            "name": "[common] regexp group.regexp",
+            "scope": [
+                "punctuation.definition.character-class.regexp",
+                "punctuation.definition.group.regexp",
+            ],
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#ffd900"
+            }
+        },
+        {
+            "name": "[common] regexp operator.quantifier",
+            "scope": "keyword.control.anchor.regexp",
+            "settings": {
+                "foreground": "#007b43"
             }
         },
         {
             "name": "[common] regexp operator.quantifier",
             "scope": "keyword.operator.quantifier.regexp",
-            "settings": {}
-        },
-        {
-            "name": "[common] Regular Expressions",
-            "scope": "string.regexp",
-            "settings": {}
+            "settings": {
+                "foreground": "#000000"
+            }
         },
         {
             "name": "[Markup] markup Italic",
