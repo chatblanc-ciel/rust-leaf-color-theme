@@ -1122,5 +1122,35 @@
                 "foreground": "#007b43"
             }
         },
+        {
+            "name": "[svelte] Tag name",
+            "scope": [
+                "entity.name.tag.svelte",
+            ],
+            "settings": {
+                "foreground": "#d3381c"
+            }
+        },
+        {
+            "name": "[svelte] svelte special Tag name(script, main, style)",
+            "scope": [
+                "meta.script.svelte entity.name.tag.svelte",
+                "meta.scope.tag.main.svelte entity.name.tag.svelte",
+                "meta.style.svelte entity.name.tag.svelte",
+            ],
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#d3381c"
+            }
+        },
+        {
+            "name": "[svelte] Tag name",
+            "scope": [
+                "entity.other.attribute-name.svelte",
+            ],
+            "settings": {
+                "foreground": "#007b43"
+            }
+        },
     ],
 }
